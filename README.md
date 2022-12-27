@@ -107,7 +107,7 @@ flowchart LR;
 By now, you might be able to see where this could lead to problems dealing with `Returns`. Each `Return` needs to go back to its respective `PowerSource`. We don't want any "cross-mojonation" happening here. 
 
 Example: the A/C's `Return` wire goes back to the `CoolPowerSource`, so supplying the A/C from the `HeatPowerSource` isn't what we want happening here.
-#### Jumpers
+#### "Jumpers"
 Simple/Dumb Thermostats didn't have "brains" to understand how a complete home system might work, so they were made to handle split Heating and A/C systems to cover all the "bases". Having split `Rc` and `Rh` terminals does just that. Modern HVAC systems have moved to combining both heating and cooling into single systems, meaning there's only one `PowerSource` and it's shared between the Heat and A/C. 
 
 If you upgraded to one of these combined systems and wanted to keep your old thermostat (or preferred to keep to a cheaper thermostat), then a "jumper" wire was needed to connect the `Rh` and `Rc` terminals of the thermostat together. This allows for a single `PowerSource` to be connected to both at the same time... kind of like a crude splitter. 
